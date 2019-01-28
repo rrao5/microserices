@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<table>
+		            
+		<tr>
+			                
+			<td><input type="text" th:value="${car}" th:name="car" th:id="car" /></td>
+			<form th:action="@{/inventory/__${car}__}" method="get">
+				
+			<td>
+				<button type="submit">Submit</button>
+			</td>
+			</form>
+
+		</tr>
+	</table>
+
+</body>
+</html>
